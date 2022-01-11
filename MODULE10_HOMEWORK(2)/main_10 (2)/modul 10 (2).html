@@ -1,0 +1,36 @@
+<!--Задание 2.
+Сверстайте кнопку, клик на которую будет выводить данные о размерах экрана с помощью alert. -->
+
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>modul 10 (2)</title>
+  <link rel="stylesheet" href="./modul 10 (2).css">
+</head>
+<body>
+
+    <h1>---------------------------------</h1>
+    
+    <button id ="but" class="but">
+        <div class="but-text">Узнай размер экрана!</div>
+    </button>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+const but = document.querySelector("#but")
+
+ but.addEventListener('click', () => {
+     alert(`  Размеры экрана:
+   ширина=${screen.width};высота = ${screen.height}`)
+ })          
+}) 
+
+
+</script>
+</body>
+
+</html>
